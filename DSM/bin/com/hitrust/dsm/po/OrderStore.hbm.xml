@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2017/8/10 �U�� 10:46:06 by Hibernate Tools 5.2.3.Final -->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="DSM" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.hitrust.dsm.po.OrderStore" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="order_store">
+        <id name="osId" type="string">
+            <column length="4" name="OS_ID"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="osName" optimistic-lock="true" type="string" unique="false">
+            <column length="30" name="OS_NAME" not-null="true">
+                <comment>店家名稱</comment>
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="osPhoto" optimistic-lock="true" type="string" unique="false">
+            <column length="12" name="OS_PHOTO" not-null="true">
+                <comment>店家電話</comment>
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="osAddr" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="OS_ADDR" not-null="true">
+                <comment>店家地址</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

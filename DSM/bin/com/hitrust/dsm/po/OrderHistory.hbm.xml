@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2017/8/10 �U�� 10:46:06 by Hibernate Tools 5.2.3.Final -->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="DSM" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.hitrust.dsm.po.OrderHistory" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="order_history">
+        <id name="rowId" type="string">
+            <column length="6" name="ROW_ID"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="osId" optimistic-lock="true" type="string" unique="false">
+            <column length="4" name="OS_ID" not-null="true">
+                <comment>店家_ID</comment>
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="orderDate" optimistic-lock="true" type="string" unique="false">
+            <column length="12" name="ORDER_DATE" not-null="true">
+                <comment>食用日期</comment>
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="team" optimistic-lock="true" type="string" unique="false">
+            <column length="4" name="TEAM" not-null="true">
+                <comment>群組</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

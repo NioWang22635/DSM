@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2017/8/10 �U�� 10:46:06 by Hibernate Tools 5.2.3.Final -->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="DSM" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.hitrust.dsm.po.DrinkMenu" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="drink_menu">
+        <composite-id class="com.hitrust.dsm.po.DrinkMenuId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="dsId" type="string">
+                <column length="4" name="DS_ID"/>
+            </key-property>
+            <key-property name="dmName" type="string">
+                <column length="20" name="DM_NAME"/>
+            </key-property>
+        </composite-id>
+        <property generated="never" lazy="false" name="dmPic" optimistic-lock="true" type="string" unique="false">
+            <column length="4" name="DM_PIC" not-null="true">
+                <comment>���~����</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

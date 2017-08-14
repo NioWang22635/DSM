@@ -1,0 +1,11 @@
+.metadata
+*.bak
+local.properties
+.settings/
+*.bin
+.classpath
+.project
+*.lock
+
+# STS (Spring Tool Suite)
+.springBeans

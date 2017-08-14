@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2017/8/10 �U�� 10:46:06 by Hibernate Tools 5.2.3.Final -->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="DSM" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.hitrust.dsm.po.DrinkStore" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="drink_store">
+        <id name="dsId" type="string">
+            <column length="4" name="DS_ID"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="dsName" optimistic-lock="true" type="string" unique="false">
+            <column length="30" name="DS_NAME" not-null="true">
+                <comment>���a�W��</comment>
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="dsPhoto" optimistic-lock="true" type="string" unique="false">
+            <column length="12" name="DS_PHOTO" not-null="true">
+                <comment>���a�q��</comment>
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="dsAddr" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="DS_ADDR" not-null="true">
+                <comment>���a�a�}</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>
